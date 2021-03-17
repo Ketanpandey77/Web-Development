@@ -1,0 +1,31 @@
+h1,h4{
+    text-align: center;
+}
+table{
+    color:white;
+    background-color: black;
+    margin-left:520px;
+    border:2px solid black;
+}
+.design{
+    padding:10px;
+}
+.submit{
+    background-color: blue;
+    border-radius: 2px;
+    display:block;
+    color:white;
+    width:100%;
+
+}
+.submit:hover{
+    cursor: pointer;
+}
+.spread{
+    display:block;
+    width:100%
+}
+.s{
+    display:block;
+    display:100%;
+}
