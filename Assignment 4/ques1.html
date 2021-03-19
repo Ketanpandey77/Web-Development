@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing color of a circle randomly</title>
+    <style>
+        #circle {
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: #2314ab;
+            border-radius: 100px;
+        }
+
+        button {
+            background-color: rgb(16, 80, 139);
+            width: 80px;
+            height: 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 60px;
+            margin-top: 20px;
+        } 
+
+        #btn:hover{
+            background-color: black;
+            color:white;
+            border:3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="circle">
+
+    </div>
+
+    <button id="btn" value="Change">CHANGE</button>
+
+    <script>
+
+        function randomColorGenerator() {
+            color="#";
+            colors="0123456789ABCDEF"
+
+            for(var i=0;i<6;i++){
+                ran=Math.ceil((Math.random()*15));
+                color=color+colors[ran];
+            }
+            return color;
+        }
+
+        btn = document.getElementById('btn');
+        circle = document.getElementById('circle');
+
+        function change() {
+            color = randomColorGenerator();
+            circle.style.backgroundColor = color;
+        }
+
+        btn.addEventListener('click',change);
+
+    </script>
+</body>
+
+</html>

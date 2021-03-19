@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping paragraphs on a click</title>
+    <style>
+        p{
+            border:2px solid dashed;
+            background-color: green;
+            color:white;
+            line-height:50px;
+            display:inline;
+        }
+        button{
+            background-color: blue;
+            color:white;
+        }
+        button:hover{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para1">I use Kotlin for Android Development</p><br>
+    <p id="para2">C++ is my fav language</p><br><br>
+    <button id="btn">Swap Content</button>
+
+    <script>
+        btn = document.getElementById('btn');
+        btn.addEventListener('click', function () {
+            p1 = document.getElementById('para1');
+            p2 = document.getElementById('para2');
+
+            p1content = p1.innerText;
+            p2content = p2.innerText;
+
+            p1.innerText = p2content;
+            p2.innerText = p1content;
+        })
+    </script>
+</body>
+
+</html>
