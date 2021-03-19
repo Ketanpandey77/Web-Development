@@ -8,24 +8,27 @@ table{
     border:2px solid black;
 }
 .design{
-    padding:10px;
+    padding:5px;
 }
 .submit{
     background-color: blue;
     border-radius: 2px;
-    display:block;
     color:white;
     width:100%;
-
 }
 .submit:hover{
     cursor: pointer;
 }
-.spread{
-    display:block;
-    width:100%
+select{
+    width:100%;
 }
-.s{
-    display:block;
-    display:100%;
+#em{
+    width:96%;
+}
+#ph{
+    width:96%;
+}
+.dob{
+    padding:7px;
+    width:27%;
 }

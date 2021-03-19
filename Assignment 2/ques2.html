@@ -10,24 +10,24 @@
     <h1>Please Enter Your Details</h1>
     <h4>fill the application form below and submit</h4>
 
-    <form action="" method="POST">
+    <form action="ques2.html" method="POST">
         <table class="table">
             <tr>
                 <td class="text">Name*</td>
-                <td><input class="design" type="text" name="name" placeholder="First Name" required></td>
-                <td><input class="design" type="text" name="name" placeholder="Last Name" required></td>
+                <td><input class="design" type="text" name="name" placeholder="First Name" required>
+                <input class="design" type="text" name="name" placeholder="Last Name" required></td>
             </tr>
             <tr>
                 <td class="text">E-Mail Address*</td>
-                <td class="spread"><input class="design" type="text" name="E-Mail" placeholder="Mail@example.com" required></td>
+                <td class="spread"><input id="em" class="design" type="text" name="E-Mail" placeholder="Mail@example.com" maxlength="30" required></td>
             </tr>
             <tr>
                 <td class="text">Phone No.*</td>
-                <td class="spread"><input class="design" type="text" name="name" placeholder="Phone No." required></td>
+                <td class="spread"><input id="ph" class="design" type="text" name="name" placeholder="Phone No." required></td>
             </tr>
-            <tr>
+            <tr>3
                 <td class="text">Gender*</td>
-                <td><select name="gender" required>
+                <td><select class="s" name="gender" required>
                 <option value="-1" selected>Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -35,7 +35,7 @@
             </tr>
             <tr>
                 <td class="text">Citizen*</td>
-                <td><select name="gender" required>
+                <td><select class="s" name="gender" required>
                     <option value="-1" selected>Select Country</option>
                     <option value="India">India</option>
                     <option value="Japan">Japan</option>
@@ -46,22 +46,25 @@
             </tr>
             <tr>
                 <td class="text">Date of Birth*</td>
-                <td class='spread'><input class="design" type="date" name="date" placeholder="Date" required></td></tr>
+                <td class="spread"><input class="dob" type="number" name="date" placeholder="Date" min="1" max="30" required>
+                <input class="dob" type="number" name="month" placeholder="Month" min="1" max="12" required>
+                <input class="dob" type="number" name="year" placeholder="Year" min="1970" max="2010" required></td>
+            </tr>
             </tr>
             <tr>
                 <td class="text">Address*</td>
-                <td><input class="design" type="text" name="Street Address" placeholder="Street Address" required></td>
-                <td><input class="design" type="text" name="Street Line 2" placeholder="Street Line 2" required></td>
+                <td><input class="design" type="text" name="Street Address" placeholder="Street Address" required>
+                <input class="design" type="text" name="Street Line 2" placeholder="Street Line 2" required></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input class="design" type="text" name="Landmark" placeholder="Landmark" required></td></td>
-                <td><input class="design" type="text" name="Street" placeholder="City" required></td></td>
+                <td><input class="design" type="text" name="Landmark" placeholder="Landmark" required>
+                <input class="design" type="text" name="Street" placeholder="City" required></td></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input class="design" type="text" name="State/Province" placeholder="Street Address" required></td></td>
-                <td><input class="design" type="text" name="Postal/Zip Code" placeholder="Street Address" required></td></td>
+                <td><input class="design" type="text" name="State/Province" placeholder="Street Address" required>
+                <input class="design" type="text" name="Postal/Zip Code" placeholder="Street Address" required></td>
             </tr>
             <tr>
                 <td></td>
